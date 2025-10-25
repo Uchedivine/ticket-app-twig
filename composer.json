@@ -1,0 +1,20 @@
+{
+    "name": "uchedivine/ticket-app-twig",
+    "description": "Ticket Management System with Twig",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Uchedivine\\TicketAppTwig\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Uchedivine",
+            "email": "uchedivine65@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "twig/twig": "^3.21"
+    }
+}

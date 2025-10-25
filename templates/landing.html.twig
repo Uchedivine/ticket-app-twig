@@ -1,0 +1,104 @@
+{% extends "base.html.twig" %}
+
+{% block title %}TicketHub - Home{% endblock %}
+
+{% block content %}
+<div class="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100">
+    
+    <!-- Wavy Background - SVG at the bottom -->
+    <div class="absolute bottom-0 left-0 right-0 z-0">
+        <svg viewBox="0 0 1440 320" class="w-full">
+            <path 
+                fill="#4F46E5" 
+                fill-opacity="0.3"
+                d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+        </svg>
+    </div>
+
+    <!-- Decorative Circles -->
+    <div class="absolute top-20 left-10 w-32 h-32 bg-purple-400 rounded-full opacity-20 blur-xl"></div>
+    <div class="absolute top-40 right-20 w-48 h-48 bg-pink-400 rounded-full opacity-20 blur-xl"></div>
+    <div class="absolute bottom-32 left-1/4 w-40 h-40 bg-blue-400 rounded-full opacity-20 blur-xl"></div>
+    
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+        
+        <!-- Hero Section -->
+        <div class="text-center max-w-4xl mx-auto">
+            
+            <!-- Decorative circle in hero -->
+            <div class="mx-auto w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center mb-8 shadow-lg">
+                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+                </svg>
+            </div>
+
+            <!-- App Name -->
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
+                Ticket<span class="text-indigo-600">Hub</span>
+            </h1>
+            
+            <!-- Catchy Description -->
+            <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                Manage your tickets with ease. Create, track, and resolve issues in one powerful platform.
+            </p>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="?page=auth&mode=signup" class="px-8 py-4 bg-indigo-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition-all duration-300 hover:scale-105">
+                    Get Started
+                </a>
+                
+                <a href="?page=auth&mode=login" class="px-8 py-4 bg-white text-indigo-600 text-lg font-semibold rounded-lg shadow-lg hover:bg-gray-50 transition-all duration-300 hover:scale-105 border-2 border-indigo-600">
+                    Login
+                </a>
+            </div>
+
+            <!-- Features Box Section -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Feature 1 -->
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Easy Tracking</h3>
+                    <p class="text-gray-600">Monitor all your tickets in real-time with intuitive dashboards.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Secure</h3>
+                    <p class="text-gray-600">Your data is protected with enterprise-grade security.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Fast</h3>
+                    <p class="text-gray-600">Lightning-fast performance for seamless ticket management.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-gray-600 text-sm">
+            <p>&copy; 2025 TicketHub. Built with Twig/PHP.</p>
+        </footer>
+
+    </div>
+</div>
+{% endblock %}
